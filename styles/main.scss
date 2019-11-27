@@ -1,0 +1,420 @@
+main {
+    background-color: #f4f4f4;
+    display: flex;
+
+}
+
+.account-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 31px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #fff;
+}
+
+.account {
+    &.type {
+        font-size: 10px;
+        letter-spacing: 1px;
+        color: #2f3234;
+    }
+
+    &.name {
+        font-size: 24px;
+        font-weight: 900;
+        letter-spacing: 0.29px;
+        color: #000000;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    &.number {
+        font-size: 10px;
+        letter-spacing: 1px;
+        color: #858585;
+
+    }
+
+    &.img {
+        width: 19.6px;
+        height: 20px;
+        padding-left: 9px;
+    }
+}
+
+.account-balance {
+    &.type {
+        font-size: 10px;
+        letter-spacing: 1px;
+        color: #2f3234;
+        padding-top: 17px;
+    }
+
+    &.value {
+        font-size: 18px;
+        font-weight: 900;
+        color: #2f3234;
+        padding-bottom: 16.5px;
+    }
+}
+
+.account-buttons {
+    display: flex;
+    height: 125.5px;
+    flex-direction: column;
+    border-bottom: 1px solid #dbdbdb;
+    border-top: 1px solid #dbdbdb;
+    padding-bottom: 24px;
+    padding-top: 23.5px;
+}
+
+.account-buttons {
+    a {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        color: #fff;
+        line-height: 50px; //wysrodkowanie w pionie
+        border-radius: 4px;
+        border: solid 1px #d71920;
+        background-color: #d71920;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 0.14px;
+        height: 50px;
+
+        &:last-child {
+            background-color: #f4f4f4;
+            color: #d71920;
+            border: solid 1px #f4f4f4;
+            margin-top: 25px;
+        }
+    }
+}
+
+.account-list {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-top: 17.5px;
+    padding-bottom: 14.5px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.account-list {
+
+
+    .account-list-left-mid-container {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .account-list-left-column {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .account-list-mid-column {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    .account-list-right-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .account-list-right-column {
+        .text-main {
+            text-align: right
+        }
+    }
+
+    .text-main {
+        font-size: 14px;
+        font-weight: 900;
+        padding-bottom: 1px;
+        line-height: 1.07;
+        letter-spacing: 0.17px;
+        color: #000000;
+    }
+
+    .text-side {
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.14px;
+        color: #858585;
+    }
+
+}
+
+.account-list-more {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.07;
+    letter-spacing: 0.17px;
+    color: #d71920;
+    padding-top: 12.5px;
+}
+
+.account-list-title-tablet {
+    display: none;
+}
+
+.account-list-category {
+    display: none;
+}
+
+.aside-top {
+    display: none;
+}
+
+.aside-bottom {
+    display: none;
+}
+
+@media (min-width: 360px) {
+    .account-list {
+        padding-top: 9.5px;
+        padding-bottom: 14.5px;
+    }
+
+    .account-list-title-tablet {
+        padding-bottom: 4.5px;
+    }
+
+
+    main {
+        height: 850px;
+    }
+
+    .account-list-mid-column {
+        .text-main {
+            width: 300px;
+        }
+    }
+
+    .account-list-right-column {
+        .text-main {
+            width: 100px;
+
+        }
+    }
+
+    .main-container {
+        height: 480px;
+        background-color: #fff;
+        margin: 40px 20px 40px 20px;
+    }
+
+    .account-container-top {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .account-balance {
+
+        &.type {
+            text-align: right;
+        }
+
+        &.value {
+            font-size: 26px;
+        }
+    }
+
+    .account-container {
+        padding: 0;
+    }
+
+    .account-buttons {
+        border: none;
+        flex-direction: row;
+        padding: 16px 0 0 20px;
+        height: 65px;
+    }
+
+    .account-buttons {
+        a {
+            margin: 0;
+            width: 210px;
+
+            &:last-child {
+                margin: 0 0 0 20px;
+            }
+        }
+    }
+
+    .account-list {
+
+        .account-list-left-mid-container {
+            align-items: center;
+
+        }
+
+        .account-list-left-column {
+            flex-direction: row-reverse;
+            text-align: center;
+            justify-content: space-between;
+            padding-left: 33px;
+
+        }
+
+        .account-list-left-column {
+            .text-side {
+                font-size: 14px;
+                font-weight: 900;
+                color: #2f3234;
+                padding-right: 36px;
+            }
+
+            img {
+                padding-left: 5px;
+            }
+        }
+
+        .account-list-right-column {
+            .text-main {
+                padding-right: 22px;
+            }
+        }
+
+        .account-list-mid-column {
+
+            padding-left: 36px;
+
+        }
+
+        .account-list-category {
+            display: block;
+            font-size: 10px;
+            line-height: 1.5;
+            letter-spacing: 0.12px;
+            color: #3cae64;
+            width: 84px;
+        }
+    }
+
+    .account-list-more {
+        padding: 27.5px 0 35px 32px;
+    }
+
+    .account-list-title-tablet {
+        display: flex;
+    }
+
+    .text-side-title {
+        font-size: 10px;
+        line-height: 1.5;
+        letter-spacing: 0.12px;
+        color: #858585;
+    }
+
+    .text-side-title {
+        &.first {
+            padding-left: 36px;
+            padding-right: 43px;
+        }
+
+        &.second {
+            padding-right: 50px;
+        }
+
+        &.third {
+            padding-right: 150px;
+        }
+
+        &.fifth {
+            text-align: right;
+        }
+    }
+
+    %title {
+        font-size: 10px;
+        line-height: 1.25;
+        letter-spacing: 0.14px;
+        color: #858585;
+        font-weight: normal;
+    }
+
+    .account-list-title-tablet {
+
+        .account-list-category {
+            @extend %title;
+        }
+
+        .account-list-mid-column {
+            padding-left: 0px;
+            width: 235px;
+
+            .text-side {
+                @extend %title;
+            }
+        }
+
+        .account-list-left-column {
+
+            .text-side {
+                width: 35px;
+                padding-right: 28px;
+                @extend %title;
+            }
+        }
+
+        .account-list-right-column {
+            .text-side {
+                padding-right: 23px;
+                @extend %title;
+            }
+        }
+
+
+    }
+
+}
+
+
+
+@media (min-width: 768px) {
+   /*  main{
+        min-width: 1126px;
+    } */
+    .aside-top {
+        display: block;
+        margin: 40px 65px 40px 20px;
+        padding: 20px;
+        background-color: #4c92e0;
+        color: #fff;
+    }
+
+    .aside-top{
+        h1{
+            font-size: 22px;
+        }
+        div{
+            font-size: 14px;
+        }
+        h2{
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+
+    .aside-bottom {
+        background-color: #fff;
+        display: block;
+        height: 385px;
+        margin: 40px 65px 40px 20px;
+        padding: 14px 20px 20px 20px;
+        font-size: 16px;
+        font-weight: 900;
+    }
+}

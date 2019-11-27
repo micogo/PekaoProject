@@ -1,0 +1,201 @@
+header {
+  height: 56px;
+  background-color: #d71920;
+  display: block; }
+
+.mobile-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 18px; }
+
+.upper-mobile-header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.search {
+  height: 20px;
+  width: 20px;
+  padding-right: 30px;
+  cursor: pointer; }
+
+nav {
+  width: 20px;
+  height: 14px;
+  cursor: pointer; }
+
+.bar {
+  height: 2px;
+  background-color: #fff;
+  border-radius: 5px; }
+
+#bar1 {
+  margin-bottom: 4px; }
+
+#bar3 {
+  margin-top: 4px; }
+
+.tablet-header {
+  display: none; }
+
+#userDesktop {
+  display: none; }
+
+.lower-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 56px;
+  color: #aaa;
+  font-size: 16px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+input {
+  margin-right: 20px;
+  min-width: 280px;
+  border-radius: 4px;
+  height: 40px;
+  color: gray;
+  background-image: url("../images/icon-search2.svg");
+  background-repeat: no-repeat;
+  background-position: 90% center;
+  padding-left: 20px; }
+
+.class {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+  width: 113px;
+  height: 41px;
+  cursor: pointer;
+  color: #fff; }
+
+#check1:checked ~ .navv #c1 {
+  background-color: #f4f4f4;
+  color: #d71920;
+  font-weight: bold; }
+
+#check2:checked ~ .navv #c2 {
+  background-color: #f4f4f4;
+  color: #d71920;
+  font-weight: bold; }
+
+input[type="radio"] {
+  display: none; }
+
+.navv {
+  padding-left: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none; }
+
+@media (min-width: 360px) {
+  .mobile-header {
+    display: none; }
+
+  .tablet-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+  .upper-header {
+    height: 56px;
+    background-color: #ac1419;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+  .upper-header-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+  header {
+    height: 112px; }
+
+  #logo {
+    padding-left: 20px; }
+
+  .pekaoLogo {
+    padding: 10px; }
+
+  #logout {
+    padding-left: 31px;
+    padding-right: 20px;
+    color: #fff;
+    font-size: 12px;
+    -ms-flex-item-align: center;
+        align-self: center; } }
+@media (min-width: 768px) {
+  /*   header{
+        min-width: 1126px;
+    } */
+  .pekaoLogo#logo {
+    padding-left: 66px; }
+
+  .pekaoLogo#logout {
+    padding-right: 66px; }
+
+  .navv {
+    padding-left: 66px; }
+
+  input {
+    margin-right: 66px;
+    width: 485px; }
+
+  #userDesktop {
+    display: initial;
+    color: #fff;
+    font-size: 12px;
+    -ms-flex-item-align: center;
+        align-self: center; } }

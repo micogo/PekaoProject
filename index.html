@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="mobile-header">
+        <span class="pekaoLogo"><img src="images/logo.svg"/></span>
+        <div class="upper-mobile-header-right">
+          <nav>
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+          </nav>
+        </div>
+      </div>
+      <div class="tablet-header">
+        <div class="upper-header">
+          <span class="pekaoLogo" id="logo"
+            ><img src="images/logosamo.svg"
+          /></span>
+          <div class="upper-header-right">
+            <span class="pekaoLogo"><img src="images/settings.svg"/></span>
+            <span class="pekaoLogo"><img src="images/mail.svg"/></span>
+            <span class="pekaoLogo"><img src="images/user.svg"/></span>
+            <span class="pekaoLogo" id="userDesktop">Katarzyna Kowalewska</span>
+            <span class="pekaoLogo" id="logout">WYLOGUJ</span>
+          </div>
+        </div>
+        <div class="lower-header">
+          <input id="check1" type="radio" name="check" checked />
+          <!--  lub type="checkbox" -->
+          <input id="check2" type="radio" name="check" />
+
+          <div class="navv">
+            <label for="check1">
+              <div class="class" id="c1">PRODUKTY</div></label
+            >
+            <label for="check2">
+              <div class="class" id="c2">PŁATNOŚCI</div></label
+            >
+          </div>
+
+          <input
+            type="search"
+            placeholder="Wyszukaj"
+            onfocus="this.placeholder=''"
+            onblur="this.placeholder='Wyszukaj'"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main-container">
+        <article class="account-container">
+          <div class="account-container-top">
+            <section>
+              <div class="account type">RACHUNEK PODSTAWOWY</div>
+              <div class="account name">
+                Moje konto przekorzystne<img
+                  src="images/right-arrow.svg"
+                  class="account img"
+                />
+              </div>
+              <div class="account number">12 3456 7890 1234 5678 9012 3456</div>
+            </section>
+            <section>
+              <div class="account-balance type">DOSTĘPNE ŚRODKI</div>
+              <div class="account-balance value">12 345,67</div>
+            </section>
+          </div>
+          <section class="account-buttons">
+            <a href="#">NOWA PŁATNOŚĆ</a>
+            <a href="#">HISTORIA</a>
+          </section>
+          <section>
+            <div class="account-list account-list-title-tablet">
+              <div class="account-list-left-mid-container">
+                <div class="account-list-left-column">
+                  <div class="text-side">TYP</div>
+                  <div class="text-side">DATA</div>
+                </div>
+                <div class="account-list-mid-column">
+                  <div class="text-side">ODBIORCA / NADAWCA /TYTUŁ</div>
+                </div>
+              </div>
+              <div class="account-list-category">KATEGORIA</div>
+              <div class="account-list-right-column">
+                <div class="text-side">KWOTA</div>
+              </div>
+            </div>
+            <div class="account-list">
+              <div class="account-list-left-mid-container">
+                <div class="account-list-left-column">
+                  <div><img src="images/49-copy.svg" /></div>
+                  <div class="text-side">21.05</div>
+                </div>
+                <div class="account-list-mid-column">
+                  <div class="text-main">Antonina Wójcik</div>
+                  <div class="text-side">Zwrot</div>
+                </div>
+              </div>
+              <div class="account-list-category">WPŁYWY WEWN.</div>
+              <div class="account-list-right-column">
+                <div class="text-main">125,68 PLN</div>
+              </div>
+            </div>
+            <div class="account-list">
+              <div class="account-list-left-mid-container">
+                <div class="account-list-left-column">
+                  <div><img src="images/49-copy.svg" /></div>
+                  <div class="text-side">21.05</div>
+                </div>
+                <div class="account-list-mid-column">
+                  <div class="text-main">Uber</div>
+                  <div class="text-side">Przejazd 123CGJ/365</div>
+                </div>
+              </div>
+              <div class="account-list-category">WPŁYWY WEWN.</div>
+              <div class="account-list-right-column">
+                <div class="text-main">25,21 PLN</div>
+              </div>
+            </div>
+            <div class="account-list">
+              <div class="account-list-left-mid-container">
+                <div class="account-list-left-column">
+                  <div><img src="images/49-copy.svg" /></div>
+                  <div class="text-side">21.05</div>
+                </div>
+                <div class="account-list-mid-column">
+                  <div class="text-main">Antonina Wójcik</div>
+                  <div class="text-side">Zwrot</div>
+                </div>
+              </div>
+              <div class="account-list-category">WPŁYWY WEWN.</div>
+              <div class="account-list-right-column">
+                <div class="text-main">125,68 PLN</div>
+              </div>
+            </div>
+            <div class="account-list">
+              <div class="account-list-left-mid-container">
+                <div class="account-list-left-column">
+                  <div><img src="images/49-copy.svg" /></div>
+                  <div class="text-side">21.05</div>
+                </div>
+                <div class="account-list-mid-column">
+                  <div class="text-main">Antonina Wójcik</div>
+                  <div class="text-side">Zwrot</div>
+                </div>
+              </div>
+              <div class="account-list-category">WPŁYWY WEWN.</div>
+              <div class="account-list-right-column">
+                <div class="text-main">125,68 PLN</div>
+              </div>
+            </div>
+            <div class="account-list-more">POKAŻ WIĘCEJ</div>
+          </section>
+        </article>
+      </div>
+      <div class="asside-container">
+      <aside class="aside-top">
+        <h1>Masz wolne środki</h1>
+        <div>
+          Na swoim koncie masz dużo wolnych środków. Warto przenieść je na
+          lokatę i uchronić przed inflacją
+        </div>
+        <h2>Call To Action</h2>
+      </aside>
+      <aside class="aside-bottom">
+        <div>Analiza wydatków</div>
+      </aside>
+    </div>
+    </main>
+
+    <footer>
+      
+      <ul>
+        <li><a href="#">DM Pekao</a></li>
+        <li><a href="#">CDM Pekao S.A.</a></li>
+        <li><a href="#">Pioneer Pekao TFI S.A.</a></li>
+        <li><a href="#">Pekao Pioneer PTE S.A.</a></li>
+        <li><a href="#">Pekao Leasing Sp. z o.o.</a></li>
+      </ul>
+
+      <span id="copyright">Copyright © 2002 - 2019 Bank Pekao S.A.</span>
+    
+
+      <span id="text-footer"
+        >Bank Polska Kasa Opieki Spółka Akcyjna z siedzibą w Warszawie, ul.
+        Grzybowska 53/57, 00-950 Warszawa, wpisany do rejestru przedsiębiorców w
+        Sądzie Rejonowym dla m.st. Warszawy w Warszawie, XII Wydział Gospodarczy
+        Krajowego Rejestru Sądowego, KRS: 0000014843, NIP: 526-00-06-841, REGON:
+        000010205, wysokość kapitału zakładowego i kapitału wpłaconego: 262 470
+        034 zł.</span
+      >
+    </footer>
+  </body>
+</html>
