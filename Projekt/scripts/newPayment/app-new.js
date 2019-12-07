@@ -45,7 +45,8 @@ document.addEventListener("DOMContentLoaded", function ()
         }
     });
 
-
+    // zly regeex akceptuuej wiecej niz 26 cyfr
+    // wszystkie te zmienne zwracaja undefined
     let otherAccount = prepareInput("otherAccount-input", /^\d{2}[ ]\d{4}[ ]\d{4}[ ]\d{4}[ ]\d{4}[ ]\d{4}[ ]\d{4}|\d{26}/);
     console.log(otherAccount.setInputListener());
 
