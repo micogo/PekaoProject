@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="/styles/stylesNewPayment/styles-new.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <span class="header-name">Przelew krajowy</span>
+        <img class="image-header" src="images/a.png">
+    </header>
+    <main>
+    <form class="transfer-form">
+        <p class="input-name">Z RACHUNKU</p>
+        <select >
+            <option value="myAccount" class="myAccount-select"><div>Moje Konto Przekorzystne</<div> <div>12 734,56 PLN</div></option>
+        </select>
+        <div class="otherAccount-container">
+
+        <p class="input-name">NA RACHUNEK</p>
+        <input type="text" placeholder="Wpisz rachunek odbiorcy"  onfocus="this.placeholder=''"
+        onblur="this.placeholder='Wpisz rachunek odbiorcy'" class="otherAccount-input">
+        <div class="other-account-enter-amount">Wpisz kwotę</div>
+
+        <p class="input-name">KWOTA PRZELEWU</p>
+        <input type="text" name="amount-transfer" class="amount-transfer-input">
+
+        <p class="input-name">ADRES OBIORCY (OPCJONALNIE)</p>
+        <input type="text" placeholder ="Wpisz adres odbiorcy" onfocus="this.placeholder=''"
+        onblur="this.placeholder='Wpisz adres odbiorcy'" name="address-recipient" class="address-recipient-input">
+
+        <p class="input-name">TYTUŁEM</p>
+        <input type="text" placeholder ="Placeholder" onfocus="this.placeholder=''"
+        onblur="this.placeholder='Placeholder'" name="transfer-title" class="transfer-title-input">
+
+        <label class="checkbox-container">Zapisz jako zlecenie stałe
+            <input type="checkbox" onchange="changeState()" checked  class="checkbox-save-transfer">
+            <span class="checkmark"></span>
+        </label>
+
+        <p class="input-name">NAZWA ZLECENIA</p>
+        <input type="text" placeholder ="Placeholder" onfocus="this.placeholder=''"
+        onblur="this.placeholder='Placeholder'" name="transfer-name" class="transfer-name-input">
+        
+    
+</main>
+<footer>
+
+        <div class="placeholder" data-placeholder="my placeholder">
+                <input value="My text" />  
+            </div>
+    <div class="oval">
+
+    </div>
+        <img class="arrow" src="images/110.svg">
+        <button type="submit">Dalej</button>
+
+        <div class="placeholder" data-placeholder="my placeholder">
+            </div>
+    </form>
+</footer>
+    <script src="/scripts/newPayment/app-new.js"></script>
+    <script src="/scripts/newPayment/inputObject-new.js"></script>
+    <script src="/scripts/newPayment/validator-new.js"></script>
+    
+</body>
+</html>
+
+

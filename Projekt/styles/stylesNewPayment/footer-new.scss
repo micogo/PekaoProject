@@ -1,0 +1,53 @@
+.payment-footer {
+    height: 73px;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px 0.2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+    box-sizing: border-box;
+}
+
+.payment-footer {
+    button {
+        font-size: 13px;
+        padding: 0;
+        border: none;
+        background: none;
+        letter-spacing: 1px;
+        font-weight: bold;
+        color: #fff;
+        margin-top: 5px;
+    }
+}
+
+
+.arrow {
+    color: #fff;
+}
+
+.oval {
+    width: 104px;
+    height: 89px;
+    background-color: #d71929;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.placeholder {
+    position: relative;
+}
+
+.placeholder::after {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    content: attr(data-placeholder);
+    pointer-events: none;
+    opacity: 0.6;
+}

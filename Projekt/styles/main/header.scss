@@ -61,17 +61,21 @@ nav {
     align-items: center;
 }
 
-input {
-    margin-right: 20px;
-    min-width: 280px;
-    border-radius: 4px;
-    height: 40px;
-    color: gray;
-    background-image: url("../images/icon-search2.svg");
-    background-repeat: no-repeat;
-    background-position: 90% center;
-    padding-left: 20px;
+
+.lower-header{
+    input {
+        margin-right: 20px;
+        min-width: 280px;
+        border-radius: 4px;
+        height: 40px;
+        color: gray;
+        background-image: url("../../images/icon-search2.svg");
+        background-repeat: no-repeat;
+        background-position: 90% center;
+        padding-left: 20px;
+    }
 }
+
 
 .class {
     display: flex;

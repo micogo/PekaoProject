@@ -9,7 +9,8 @@
       href="https://fonts.googleapis.com/css?family=Lato&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/main/style.css" />
+    <link rel="stylesheet" href="styles/stylesNewPayment/styles-new.css" />
   </head>
   <body>
     <header>
@@ -79,7 +80,7 @@
             </section>
           </div>
           <section class="account-buttons">
-            <a href="#">NOWA PŁATNOŚĆ</a>
+            <a class="newPaymentBtn" href="#">NOWA PŁATNOŚĆ</a>
             <a href="#">HISTORIA</a>
           </section>
           <section>
@@ -167,22 +168,21 @@
         </article>
       </div>
       <div class="asside-container">
-      <aside class="aside-top">
-        <h1>Masz wolne środki</h1>
-        <div>
-          Na swoim koncie masz dużo wolnych środków. Warto przenieść je na
-          lokatę i uchronić przed inflacją
-        </div>
-        <h2>Call To Action</h2>
-      </aside>
-      <aside class="aside-bottom">
-        <div>Analiza wydatków</div>
-      </aside>
-    </div>
+        <aside class="aside-top">
+          <h1>Masz wolne środki</h1>
+          <div>
+            Na swoim koncie masz dużo wolnych środków. Warto przenieść je na
+            lokatę i uchronić przed inflacją
+          </div>
+          <h2>Call To Action</h2>
+        </aside>
+        <aside class="aside-bottom">
+          <div>Analiza wydatków</div>
+        </aside>
+      </div>
     </main>
 
     <footer>
-      
       <ul>
         <li><a href="#">DM Pekao</a></li>
         <li><a href="#">CDM Pekao S.A.</a></li>
@@ -192,7 +192,6 @@
       </ul>
 
       <span id="copyright">Copyright © 2002 - 2019 Bank Pekao S.A.</span>
-    
 
       <span id="text-footer"
         >Bank Polska Kasa Opieki Spółka Akcyjna z siedzibą w Warszawie, ul.
@@ -203,5 +202,100 @@
         034 zł.</span
       >
     </footer>
+    <div class="new-payment-wrapper-background none">
+      <div class="new-payment-wrapper">
+        <div class="payment-header">
+          <span class="header-name">Przelew krajowy</span>
+          <img class="image-header" src="images/a.png" />
+        </div>
+        <div class="payment-main">
+          <form class="transfer-form">
+            <p class="input-name">Z RACHUNKU</p>
+            <select>
+              <option value="myAccount" class="myAccount-select"
+                ><div>Moje Konto Przekorzystne</div>
+                <div>12 734,56 PLN</div></option
+              >
+            </select>
+
+            <p class="input-name">NA RACHUNEK</p>
+            <input
+              type="text"
+              placeholder="Wpisz rachunek odbiorcy"
+              onfocus="this.placeholder=''"
+              onblur="this.placeholder='Wpisz rachunek odbiorcy'"
+              class="otherAccount-input"
+            />
+            <div class="other-account-enter-amount">Wpisz kwotę</div>
+
+            <p class="input-name">KWOTA PRZELEWU</p>
+            <input
+              type="text"
+              name="amount-transfer"
+              class="amount-transfer-input"
+            />
+
+            <p class="input-name">ADRES OBIORCY (OPCJONALNIE)</p>
+            <input
+              type="text"
+              placeholder="Wpisz adres odbiorcy"
+              onfocus="this.placeholder=''"
+              onblur="this.placeholder='Wpisz adres odbiorcy'"
+              name="address-recipient"
+              class="address-recipient-input"
+            />
+
+            <p class="input-name">TYTUŁEM</p>
+            <input
+              type="text"
+              placeholder="Placeholder"
+              onfocus="this.placeholder=''"
+              onblur="this.placeholder='Placeholder'"
+              name="transfer-title"
+              class="transfer-title-input"
+            />
+
+            <label class="checkbox-container"
+              >Zapisz jako zlecenie stałe
+              <input
+                type="checkbox"
+                onchange="changeState()"
+                checked
+                class="checkbox-save-transfer"
+              />
+              <span class="checkmark"></span>
+            </label>
+
+            <p class="input-name">NAZWA ZLECENIA</p>
+            <input
+              type="text"
+              placeholder="Placeholder"
+              onfocus="this.placeholder=''"
+              onblur="this.placeholder='Placeholder'"
+              name="transfer-name"
+              class="transfer-name-input"
+            />
+
+            <button type="submit">Dalej</button>
+          </form>
+        </div>
+        <div class="payment-footer">
+
+          <div class="placeholder" data-placeholder="my placeholder">
+              <input value="My text" />  
+          </div>
+          <img class="arrow" src="images/110.svg">
+          
+
+          <div class="placeholder" data-placeholder="my placeholder">
+              </div>
+      
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/newPayment/app-new.js"></script>
+    <script src="./scripts/newPayment/inputObject-new.js"></script>
+    <script src="./scripts/newPayment/validator-new.js"></script>
   </body>
 </html>

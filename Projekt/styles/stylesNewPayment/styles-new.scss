@@ -1,0 +1,30 @@
+@import 'normalize';
+@import 'main-new';
+@import 'footer-new';
+@import 'header-new';
+
+.new-payment-wrapper-background{
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.new-payment-wrapper{
+    font-family: "Lato", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    margin: 10px;
+}
+.none{
+  display: none;
+}
+
+
+
+

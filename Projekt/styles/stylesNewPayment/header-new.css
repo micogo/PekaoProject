@@ -1,0 +1,23 @@
+.payment-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  height: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.image-header {
+  width: 19px;
+  height: 19px; }
+
+.header-name {
+  font-size: 16px;
+  font-weight: bold; }
